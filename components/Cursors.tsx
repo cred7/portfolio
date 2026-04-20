@@ -222,7 +222,7 @@ export default function Terminal() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-full overflow-y-auto bg-black text-green-500 font-mono px-4 pb-6"
+      className="w-full h-full overflow-y-auto bg-black text-green-500 font-mono px-4 pb-6 remove-scrollbar"
       onClick={() => inputRef.current?.focus()}
     >
       {/* HISTORY */}

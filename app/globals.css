@@ -49,3 +49,10 @@ body {
   background-color: #22c55e; /* tailwind green-500 */
   animation: blink 1s steps(1) infinite;
 }
+.remove-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.remove-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
