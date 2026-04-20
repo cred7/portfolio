@@ -12,6 +12,7 @@ export default function Terminal() {
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [displayedHistory, setDisplayedHistory] = useState<HistoryItem[]>([]);
   const [isPrinting, setIsPrinting] = useState(false);
+  const [onFocus, setOnfocus] = useState(false);
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -88,6 +89,26 @@ export default function Terminal() {
         response = [
           "Multidisciplinary Engineer working across Aerospace, Mechanical, and Software systems.",
           "Focus on engineering systems design, maintenance operations, industrial machinery, and software-driven engineering solutions.",
+        ];
+        break;
+      case "hey":
+        response = [
+          "Hi, there. welcome to my terminlal.",
+          "this are some of the commands you can try:",
+          "help",
+          "about",
+          "projects",
+          "skills",
+          "experience",
+          "contact",
+          "education",
+          "certifications",
+          "leadership",
+          "sudo",
+          "clear",
+
+          "",
+          "type 'help' to see the list of commands again.",
         ];
         break;
 
@@ -194,6 +215,7 @@ export default function Terminal() {
     if (e.key === "Enter") {
       handleCommand(input);
       setInput("");
+      onFocus && setOnfocus(false);
     }
   };
 
@@ -234,16 +256,16 @@ export default function Terminal() {
       </div>
 
       {/* INPUT */}
-      <div className="flex items-center">
+      <div className="flex items-center border-t border-dashed border-green-600 ">
         <span className="text-blue-400 mr-2">omondielvis@portfolio:~$</span>
 
-        <div className="flex-1 relative">
+        <div className="flex-1 relative flex ">
           <span>{input}</span>
 
           {/* cursor */}
           {!isPrinting && (
             <span
-              className={`ml-1 w-2 h-5 bg-green-500 inline-block ${"animate-blink"}`}
+              className={`ml-1 w-2 h-5 bg-green-500 inline-block ${onFocus ? "animate-blink" : "bg-white"}`}
             />
           )}
 
@@ -252,6 +274,7 @@ export default function Terminal() {
             className="absolute top-0 left-0 w-full h-full opacity-0"
             type="text"
             value={input}
+            onFocus={() => setOnfocus(true)}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
           />
