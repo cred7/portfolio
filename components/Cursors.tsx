@@ -135,7 +135,7 @@ export default function Terminal() {
           "",
           "Software Engineering:",
           " • Programming Languages:",
-          " •• JavaScript/TypeScript, Python",
+          " •• JavaScript/TypeScript, Python , SQL (PostgreSQL, MySQL, MongoDB)",
           " • Frameworks & Libraries:",
           " ••• React, Next.js/Express, Django, Node.js",
           " •• DevOps & Systems:",
