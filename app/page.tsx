@@ -15,7 +15,7 @@ const page = () => {
           <Body />
         </div>
         {/* footer */}
-        <div className="flex w-full h-[9%] max-sm:h-[11%] p-1 border-t border-green-600">
+        <div className="flex w-full h-[9%] max-sm:h-[11%] p-1 border-t items-baseline border-green-600">
           <Footer />
         </div>
       </div>

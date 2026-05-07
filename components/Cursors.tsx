@@ -123,11 +123,25 @@ export default function Terminal() {
 
       case "skills":
         response = [
-          "Aerospace Systems: aircraft maintenance (AMP, MEL, AD compliance), rotorcraft & fixed-wing operations",
-          "Mechanical Engineering: turbine systems, vibration analysis, rotor dynamics, machining & fabrication",
-          "Software Engineering: React, Next.js, Django, Node.js, Python",
-          "Engineering Tools: ANSYS, MATLAB",
-          "DevOps & Systems: Linux, Docker, Nginx, Git",
+          "Aerospace Systems",
+          " • aircraft maintenance (AMP, MEL, AD compliance)",
+          " • rotorcraft & fixed-wing operations",
+          "",
+          "Mechanical Engineering:",
+          " • turbine systems",
+          " • vibration analysis",
+          " • rotor dynamics",
+          " • machining & fabrication",
+          "",
+          "Software Engineering:",
+          " • Programming Languages:",
+          " •• JavaScript/TypeScript, Python",
+          " • Frameworks & Libraries:",
+          " ••• React, Next.js/Express, Django, Node.js",
+          " •• DevOps & Systems:",
+          " ••• Linux, Docker, Kubernettes Nginx, Git",
+          "",
+          "Engineering Tools: ANSYS, Fusion 360",
           "Industrial Systems: hydropower turbine inspection & maintenance",
         ];
         break;

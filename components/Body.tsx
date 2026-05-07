@@ -6,6 +6,7 @@ const Body = () => {
       <div className="text-green-600 font-mono border-b border-green-600 p-2 flex flex-wrap gap-2 justify-center">
         <span>help |</span>
         <span>about |</span>
+        <span>skills |</span>
         <span>projects |</span>
         <span>contact |</span>
         <span>education |</span>
